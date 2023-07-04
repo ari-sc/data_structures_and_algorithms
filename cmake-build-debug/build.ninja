@@ -41,6 +41,38 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/ari/data_structures_and_algorithms/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target linked_list_test
+
+
+#############################################
+# Order-only phony target for linked_list_test
+
+build cmake_object_order_depends_target_linked_list_test: phony || CMakeFiles/linked_list_test.dir
+
+build CMakeFiles/linked_list_test.dir/data_structures/LinkedList/LinkedListTest.cpp.o: CXX_COMPILER__linked_list_test_Debug /home/ari/data_structures_and_algorithms/data_structures/LinkedList/LinkedListTest.cpp || cmake_object_order_depends_target_linked_list_test
+  DEP_FILE = CMakeFiles/linked_list_test.dir/data_structures/LinkedList/LinkedListTest.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -I/home/ari/data_structures_and_algorithms/data_structures
+  OBJECT_DIR = CMakeFiles/linked_list_test.dir
+  OBJECT_FILE_DIR = CMakeFiles/linked_list_test.dir/data_structures/LinkedList
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target linked_list_test
+
+
+#############################################
+# Link the executable linked_list_test
+
+build linked_list_test: CXX_EXECUTABLE_LINKER__linked_list_test_Debug CMakeFiles/linked_list_test.dir/data_structures/LinkedList/LinkedListTest.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/linked_list_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = linked_list_test
+  TARGET_PDB = linked_list_test.dbg
+
+# =============================================================================
 # Object build statements for SHARED_LIBRARY target stack_lib
 
 
@@ -57,6 +89,14 @@ build CMakeFiles/stack_lib.dir/data_structures/Stack/ArrayBasedStack.cpp.o: CXX_
   OBJECT_DIR = CMakeFiles/stack_lib.dir
   OBJECT_FILE_DIR = CMakeFiles/stack_lib.dir/data_structures/Stack
 
+build CMakeFiles/stack_lib.dir/data_structures/Stack/LinkedListBasedStack.cpp.o: CXX_COMPILER__stack_lib_Debug /home/ari/data_structures_and_algorithms/data_structures/Stack/LinkedListBasedStack.cpp || cmake_object_order_depends_target_stack_lib
+  DEFINES = -Dstack_lib_EXPORTS
+  DEP_FILE = CMakeFiles/stack_lib.dir/data_structures/Stack/LinkedListBasedStack.cpp.o.d
+  FLAGS = -g -fPIC -fdiagnostics-color=always -std=gnu++17
+  INCLUDES = -I/home/ari/data_structures_and_algorithms/data_structures
+  OBJECT_DIR = CMakeFiles/stack_lib.dir
+  OBJECT_FILE_DIR = CMakeFiles/stack_lib.dir/data_structures/Stack
+
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target stack_lib
@@ -65,7 +105,7 @@ build CMakeFiles/stack_lib.dir/data_structures/Stack/ArrayBasedStack.cpp.o: CXX_
 #############################################
 # Link the shared library libstack_lib.so
 
-build libstack_lib.so: CXX_SHARED_LIBRARY_LINKER__stack_lib_Debug CMakeFiles/stack_lib.dir/data_structures/Stack/ArrayBasedStack.cpp.o
+build libstack_lib.so: CXX_SHARED_LIBRARY_LINKER__stack_lib_Debug CMakeFiles/stack_lib.dir/data_structures/Stack/ArrayBasedStack.cpp.o CMakeFiles/stack_lib.dir/data_structures/Stack/LinkedListBasedStack.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/stack_lib.dir
   POST_BUILD = :
@@ -144,7 +184,7 @@ build stack_lib: phony libstack_lib.so
 #############################################
 # Folder: /home/ari/data_structures_and_algorithms/cmake-build-debug
 
-build all: phony libstack_lib.so stack_test
+build all: phony linked_list_test libstack_lib.so stack_test
 
 # =============================================================================
 # Built-in targets

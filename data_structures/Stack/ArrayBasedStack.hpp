@@ -6,7 +6,20 @@
 #include <cstdlib>
 #include <iostream>
 
+/* Advantages of array-based stack:
+1. Random access in O(1) time
+2. Easy to implement
+3. Less memory overhead (no pointers are used)
+
+Disadvantages of array-based stack:
+1. Fixed size
+2. Insertion is expensive if stack is full
+3. Memory is not dynamically allocated (wasted memory if stack is not full) */
+
+
+
 #define MAX_SIZE 100
+
 
 class ArrayBasedStack
 {

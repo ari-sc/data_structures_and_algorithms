@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -40,15 +42,22 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "linked_list_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linked_list_test-Debug-117433afd29f917c9230.json",
+					"name" : "linked_list_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "stack_lib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-stack_lib-Debug-07326420d773adce4797.json",
+					"jsonFile" : "target-stack_lib-Debug-bf2328fe824d24b67952.json",
 					"name" : "stack_lib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "stack_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-stack_test-Debug-30260907412b0d8e1b32.json",
+					"jsonFile" : "target-stack_test-Debug-b29eab1caf5164c3ea4f.json",
 					"name" : "stack_test",
 					"projectIndex" : 0
 				}

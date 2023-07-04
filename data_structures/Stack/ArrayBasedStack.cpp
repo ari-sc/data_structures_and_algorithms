@@ -5,6 +5,7 @@
 #include "ArrayBasedStack.hpp"
 
 
+// Time complexity: O(1)
 void ArrayBasedStack::push(double value)
 {
     if (isFull())
@@ -16,6 +17,7 @@ void ArrayBasedStack::push(double value)
     array[++top_index_] = value;
 }
 
+// Time complexity: O(1)
 double ArrayBasedStack::pop()
 {
     if (isEmpty())
@@ -27,6 +29,7 @@ double ArrayBasedStack::pop()
     return array[top_index_--];
 }
 
+// Time complexity: O(1)
 double ArrayBasedStack::peek()
 {
     if (isEmpty())
