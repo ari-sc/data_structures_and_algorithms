@@ -1,8 +1,0 @@
-# ninja log v5
-223	266	1688497451787416478	linked_list_test	3cf5ada148a99923
-0	18	1688499196382021074	build.ninja	2e9927e7156930de
-251	284	1688494087588559833	stack_test	853ba3c89c82e9fb
-216	250	1688494087552559130	libstack_lib.so	ebe78ddd1341d845
-1	223	1688497451743415920	CMakeFiles/linked_list_test.dir/data_structures/LinkedList/LinkedListTest.cpp.o	bb8bd0f905f0a67a
-1	220	1688493922933130771	CMakeFiles/stack_test.dir/data_structures/Stack/StackTest.cpp.o	c11506c5e6b49871
-1	216	1688494087520558506	CMakeFiles/stack_lib.dir/data_structures/Stack/ArrayBasedStack.cpp.o	56e421897e76e533

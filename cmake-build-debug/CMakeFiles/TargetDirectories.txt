@@ -1,5 +1,0 @@
-/home/ari/data_structures_and_algorithms/cmake-build-debug/CMakeFiles/linked_list_test.dir
-/home/ari/data_structures_and_algorithms/cmake-build-debug/CMakeFiles/stack_lib.dir
-/home/ari/data_structures_and_algorithms/cmake-build-debug/CMakeFiles/stack_test.dir
-/home/ari/data_structures_and_algorithms/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ari/data_structures_and_algorithms/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -10,6 +10,7 @@
 1. Random access in O(1) time
 2. Easy to implement
 3. Less memory overhead (no pointers are used)
+4. Stored in stack memory (faster access)
 
 Disadvantages of array-based stack:
 1. Fixed size

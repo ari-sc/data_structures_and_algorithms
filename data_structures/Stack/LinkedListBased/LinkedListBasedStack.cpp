@@ -5,16 +5,7 @@
 #include "LinkedListBasedStack.hpp"
 
 
-
-LinkedList::Node* LinkedListBasedStack::addNewNode(double value)
-{
-    auto newNode = new LinkedList::Node();
-    newNode->value = value;
-    newNode->next = nullptr;
-    
-    return newNode;
-}
-
+// Time complexity: O(1)
 double LinkedListBasedStack::pop()
 {
     if (isEmpty())
@@ -22,39 +13,41 @@ double LinkedListBasedStack::pop()
         std::cerr << "Error: Stack underflow" << std::endl;
     }
     
-    double value = top->value;
+    double value = top_->value;
     
-    top = top->next;
+    LinkedList::Node* temp = top_;
     
-    delete top;
+    top_ = top_->next;
+    
+    delete temp;
     
     size_--;
     
     return value;
 }
 
+// Time complexity: O(1)
 void LinkedListBasedStack::push(double value)
 {
-    LinkedList::Node* new_node = addNewNode(value);
+    auto new_node = new LinkedList::Node();
     
-    if (not isEmpty())
-    {
-        top->next = new_node;
-    }
+    new_node->value = value;
+    new_node->next = top_;
     
-    top = new_node;
+    top_ = new_node;
     
     size_++;
 }
 
+// Time complexity: O(1)
 double LinkedListBasedStack::peek() const
 {
-    return top->value;
+    return top_->value;
 }
 
 bool LinkedListBasedStack::isEmpty() const
 {
-    return top == nullptr;
+    return top_ == nullptr;
 }
 
 uint LinkedListBasedStack::size() const
