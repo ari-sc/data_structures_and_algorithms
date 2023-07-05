@@ -25,3 +25,12 @@ add_executable(linked_list_based_stack_test
 
 target_link_libraries(linked_list_based_stack_test stack_lib)
 
+######################### Queue #########################
+add_library(queue_lib SHARED
+        data_structures/Queue/ArrayBased/ArrayBasedQueue.cpp)
+
+add_executable(array_based_queue_test
+        data_structures/Queue/ArrayBased/ArrayBasedQueueTest.cpp)
+
+target_link_libraries(array_based_queue_test queue_lib)
+
